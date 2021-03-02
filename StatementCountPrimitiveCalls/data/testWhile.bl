@@ -1,0 +1,8 @@
+WHILE true DO
+    move
+    turnleft
+    turnright
+    move
+    infect
+    skip
+END WHILE

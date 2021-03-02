@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.2" sequence="40" timestamp="1600733919090" analysisTimestamp="1600733918372" release="">
+  <Project projectName="NaturalNumberOnString">
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/NaturalNumberOnString/bin/NaturalNumber3.class</Jar>
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/NaturalNumberOnString/bin/NaturalNumber3Test.class</Jar>
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/NaturalNumberOnString/bin/NaturalNumberTest.class</Jar>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/NaturalNumberOnString/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/NaturalNumberOnString/test</SrcDir>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/NaturalNumberOnString/src</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="3" last="3" removedByChange="true">
+    <Class classname="NaturalNumberTest">
+      <SourceLine classname="NaturalNumberTest" sourcefile="NaturalNumberTest.java" sourcepath="NaturalNumberTest.java"/>
+    </Class>
+    <Method classname="NaturalNumberTest" name="testDivide42By10" signature="()V" isStatic="false">
+      <SourceLine classname="NaturalNumberTest" start="141" end="148" startBytecode="0" endBytecode="16" sourcefile="NaturalNumberTest.java" sourcepath="NaturalNumberTest.java"/>
+    </Method>
+    <LocalVariable name="remainder" register="3" pc="20" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="NaturalNumberTest" start="144" end="144" startBytecode="19" endBytecode="19" sourcefile="NaturalNumberTest.java" sourcepath="NaturalNumberTest.java"/>
+    <SourceLine classname="NaturalNumberTest" start="144" end="144" startBytecode="19" endBytecode="19" sourcefile="NaturalNumberTest.java" sourcepath="NaturalNumberTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="remainder"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_CLASS_AND_INTERFACE" priority="2" rank="6" abbrev="EC" category="CORRECTNESS" first="11" last="11" removedByChange="true">
+    <Class classname="NaturalNumberTest">
+      <SourceLine classname="NaturalNumberTest" sourcefile="NaturalNumberTest.java" sourcepath="NaturalNumberTest.java"/>
+    </Class>
+    <Method classname="NaturalNumberTest" name="noArgumentConstructor" signature="()V" isStatic="false">
+      <SourceLine classname="NaturalNumberTest" start="107" end="112" startBytecode="0" endBytecode="12" sourcefile="NaturalNumberTest.java" sourcepath="NaturalNumberTest.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="134" end="3807" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Type descriptor="Lcomponents/naturalnumber/NaturalNumber;" role="TYPE_EXPECTED">
+      <SourceLine classname="components.naturalnumber.NaturalNumber"/>
+    </Type>
+    <String value="0" role="STRING_CONSTANT"/>
+    <LocalVariable name="n" register="1" pc="16" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="java.lang.Object" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Object" start="151" end="151" startBytecode="0" endBytecode="73" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <Method classname="org.junit.Assert" name="assertEquals" signature="(Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="org.junit.Assert" start="146" end="147" startBytecode="0" endBytecode="62" sourcefile="Assert.java" sourcepath="org/junit/Assert.java"/>
+    </Method>
+    <SourceLine classname="NaturalNumberTest" start="111" end="111" startBytecode="18" endBytecode="18" sourcefile="NaturalNumberTest.java" sourcepath="NaturalNumberTest.java"/>
+    <SourceLine classname="NaturalNumberTest" start="111" end="111" startBytecode="18" endBytecode="18" sourcefile="NaturalNumberTest.java" sourcepath="NaturalNumberTest.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 21 Sep 2020 20:18:38 -0400" total_classes="3" referenced_classes="29" total_bugs="0" total_size="242" num_packages="1" java_version="14.0.2" vm_version="14.0.2+12-46" cpu_seconds="1.83" clock_seconds="0.72" peak_mbytes="542.08" alloc_mbytes="2048.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="3" total_size="242">
+      <ClassStats class="NaturalNumber3" sourceFile="NaturalNumber3.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="NaturalNumber3Test" sourceFile="NaturalNumber3Test.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="NaturalNumberTest" sourceFile="NaturalNumberTest.java" interface="false" size="150" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="209" invocations="386" avgMicrosecondsPerInvocation="541" maxMicrosecondsPerInvocation="12011" standardDeviationMicrosecondsPerInvocation="1200"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="149" invocations="2" avgMicrosecondsPerInvocation="74968" maxMicrosecondsPerInvocation="139668" standardDeviationMicrosecondsPerInvocation="64700"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="22" invocations="389" avgMicrosecondsPerInvocation="57" maxMicrosecondsPerInvocation="1534" standardDeviationMicrosecondsPerInvocation="103"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="22" invocations="43" avgMicrosecondsPerInvocation="516" maxMicrosecondsPerInvocation="2963" standardDeviationMicrosecondsPerInvocation="500"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="21" invocations="29" avgMicrosecondsPerInvocation="743" maxMicrosecondsPerInvocation="4652" standardDeviationMicrosecondsPerInvocation="1176"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="18" invocations="45" avgMicrosecondsPerInvocation="401" maxMicrosecondsPerInvocation="1792" standardDeviationMicrosecondsPerInvocation="422"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="14" invocations="51" avgMicrosecondsPerInvocation="277" maxMicrosecondsPerInvocation="989" standardDeviationMicrosecondsPerInvocation="224"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="14" invocations="107" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="567" standardDeviationMicrosecondsPerInvocation="118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="14" invocations="351" avgMicrosecondsPerInvocation="40" maxMicrosecondsPerInvocation="848" standardDeviationMicrosecondsPerInvocation="89"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="12" invocations="29" avgMicrosecondsPerInvocation="438" maxMicrosecondsPerInvocation="3977" standardDeviationMicrosecondsPerInvocation="757"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="11" invocations="45" avgMicrosecondsPerInvocation="266" maxMicrosecondsPerInvocation="1703" standardDeviationMicrosecondsPerInvocation="262"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="11" invocations="44" avgMicrosecondsPerInvocation="271" maxMicrosecondsPerInvocation="1337" standardDeviationMicrosecondsPerInvocation="263"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1600134865669" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1600134865669" release="" codeSize="116" numClasses="3"/>
+    <AppVersion sequence="2" timestamp="1600135122168" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1600135180209" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1600135188941" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1600135275807" release="" codeSize="42" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1600135277875" release="" codeSize="48" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1600135307108" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1600136343616" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1600137196949" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1600142601594" release="" codeSize="71" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1600210868572" release="" codeSize="57" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1600210889928" release="" codeSize="56" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1600210948362" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1600211252683" release="" codeSize="67" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1600211294129" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1600212484721" release="" codeSize="83" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1600212658813" release="" codeSize="67" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1600212698868" release="" codeSize="83" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1600212737220" release="" codeSize="88" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1600212843491" release="" codeSize="88" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1600212937741" release="" codeSize="93" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1600212988143" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1600213029463" release="" codeSize="88" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1600213049482" release="" codeSize="67" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1600213440945" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1600213462932" release="" codeSize="67" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1600213504895" release="" codeSize="67" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1600213534967" release="" codeSize="67" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1600213640271" release="" codeSize="71" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1600213698050" release="" codeSize="70" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1600213783127" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1600214022057" release="" codeSize="67" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1600214070577" release="" codeSize="71" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1600214157433" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1600214176347" release="" codeSize="70" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1600214277329" release="" codeSize="70" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1600214290812" release="" codeSize="70" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1600214315013" release="" codeSize="70" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1600214336807" release="" codeSize="83" numClasses="1"/>
+  </History>
+</BugCollection>

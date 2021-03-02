@@ -1,0 +1,13 @@
+IF random THEN
+    WHILE next-is-enemy DO
+        infect
+    END WHILE
+ELSE
+    IF next-is-wall THEN
+        turnright
+    END IF
+END IF
+turnleft
+WHILE next-is-not-friend DO
+    move
+END WHILE

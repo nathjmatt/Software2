@@ -1,0 +1,65 @@
+import components.map.Map;
+import components.map.Map1L;
+
+/**
+ * Implementation of {@code EmailAccount}.
+ *
+ * @author Nathan Matteson
+ *
+ */
+public final class EmailAccount1 implements EmailAccount {
+
+    /*
+     * Private members --------------------------------------------------------
+     */
+
+    // TODO - declare static and instance data members
+    String firstName;
+    String lastName;
+    String address;
+    static Map<String, Integer> map = new Map1L<>();
+
+    /*
+     * Constructor ------------------------------------------------------------
+     */
+
+    /**
+     * Constructor.
+     *
+     * @param firstName
+     *            the first name
+     * @param lastName
+     *            the last name
+     */
+    public EmailAccount1(String firstName, String lastName) {
+
+        // TODO - fill in body
+
+    }
+
+    /*
+     * Methods ----------------------------------------------------------------
+     */
+
+    @Override
+    public String name() {
+
+        return this.firstName + " " + this.lastName;
+    }
+
+    @Override
+    public String emailAddress() {
+
+        return this.address;
+    }
+
+    @Override
+    public String toString() {
+
+        // TODO - fill in body
+
+        // Added to make skeleton compilable
+        return "Name: " + this.firstName + " " + this.lastName + ", Email: " + this.address;
+    }
+
+}

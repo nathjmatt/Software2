@@ -1,0 +1,268 @@
+import components.queue.Queue;
+import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
+import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
+import components.statement.Statement;
+import components.statement.Statement1;
+import components.utilities.Reporter;
+import components.utilities.Tokenizer;
+
+/**
+ * Layered implementation of secondary methods {@code parse} and
+ * {@code parseBlock} for {@code Statement}.
+ *
+ * @author Nathan Matteson
+ * @author Josh Wang
+ *
+ */
+public final class Statement1Parse1 extends Statement1 {
+
+    /*
+     * Private members --------------------------------------------------------
+     */
+
+    /**
+     * Converts {@code c} into the corresponding {@code Condition}.
+     *
+     * @param c
+     *            the condition to convert
+     * @return the {@code Condition} corresponding to {@code c}
+     * @requires [c is a condition string]
+     * @ensures parseCondition = [Condition corresponding to c]
+     */
+    private static Condition parseCondition(String c) {
+        assert c != null : "Violation of: c is not null";
+        assert Tokenizer
+                .isCondition(c) : "Violation of: c is a condition string";
+        return Condition.valueOf(c.replace('-', '_').toUpperCase());
+    }
+
+    /**
+     * Parses an IF or IF_ELSE statement from {@code tokens} into {@code s}.
+     *
+     * @param tokens
+     *            the input tokens
+     * @param s
+     *            the parsed statement
+     * @replaces s
+     * @updates tokens
+     * @requires <pre>
+     * [<"IF"> is a prefix of tokens]  and
+     *  [<Tokenizer.END_OF_INPUT> is a suffix of tokens]
+     * </pre>
+     * @ensures <pre>
+     * if [an if string is a proper prefix of #tokens] then
+     *  s = [IF or IF_ELSE Statement corresponding to if string at start of #tokens]  and
+     *  #tokens = [if string at start of #tokens] * tokens
+     * else
+     *  [reports an appropriate error message to the console and terminates client]
+     * </pre>
+     */
+    private static void parseIf(Queue<String> tokens, Statement s) {
+        assert tokens != null : "Violation of: tokens is not null";
+        assert s != null : "Violation of: s is not null";
+        assert tokens.length() > 0 && tokens.front().equals("IF") : ""
+                + "Violation of: <\"IF\"> is proper prefix of tokens";
+
+        // TODO - fill in body
+        tokens.dequeue();//Removes the IF
+        String condition = tokens.dequeue();
+        Reporter.assertElseFatalError(Tokenizer.isCondition(condition),
+                condition + " is not a valid condition.");
+        Condition c = parseCondition(condition);
+        Reporter.assertElseFatalError(tokens.dequeue().equals("THEN"),
+                "Expected THEN");
+        Statement sIf = s.newInstance();
+        sIf.parseBlock(tokens);
+        String endElse = tokens.dequeue();
+        Reporter.assertElseFatalError(
+                endElse.equals("END") || endElse.equals("ELSE"),
+                "Expected ELSE or END");
+        if (endElse.equals("ELSE")) {
+            Statement sElse = s.newInstance();
+            sElse.parseBlock(tokens);
+            Reporter.assertElseFatalError(tokens.dequeue().equals("END"),
+                    "Expected an END IF");
+            Reporter.assertElseFatalError(tokens.dequeue().equals("IF"),
+                    "Expected an END IF");
+            s.assembleIfElse(c, sIf, sElse);
+        } else {
+            Reporter.assertElseFatalError(tokens.dequeue().equals("IF"),
+                    "Expected an END IF");
+            s.assembleIf(c, sIf);
+        }
+
+    }
+
+    /**
+     * Parses a WHILE statement from {@code tokens} into {@code s}.
+     *
+     * @param tokens
+     *            the input tokens
+     * @param s
+     *            the parsed statement
+     * @replaces s
+     * @updates tokens
+     * @requires <pre>
+     * [<"WHILE"> is a prefix of tokens]  and
+     *  [<Tokenizer.END_OF_INPUT> is a suffix of tokens]
+     * </pre>
+     * @ensures <pre>
+     * if [a while string is a proper prefix of #tokens] then
+     *  s = [WHILE Statement corresponding to while string at start of #tokens]  and
+     *  #tokens = [while string at start of #tokens] * tokens
+     * else
+     *  [reports an appropriate error message to the console and terminates client]
+     * </pre>
+     */
+    private static void parseWhile(Queue<String> tokens, Statement s) {
+        assert tokens != null : "Violation of: tokens is not null";
+        assert s != null : "Violation of: s is not null";
+        assert tokens.length() > 0 && tokens.front().equals("WHILE") : ""
+                + "Violation of: <\"WHILE\"> is proper prefix of tokens";
+
+        // TODO - fill in body
+        tokens.dequeue();//Removes WHILE
+        String condition = tokens.dequeue();
+        Reporter.assertElseFatalError(Tokenizer.isCondition(condition),
+                "Not a valid condition: " + condition);
+        Condition c = parseCondition(condition);
+        Reporter.assertElseFatalError(tokens.dequeue().equals("DO"),
+                "Expected DO.");
+        Statement sWhile = s.newInstance();
+        sWhile.parseBlock(tokens);
+        Reporter.assertElseFatalError(tokens.dequeue().equals("END"),
+                "Expected END WHILE");
+        Reporter.assertElseFatalError(tokens.dequeue().equals("WHILE"),
+                "Expected END WHILE");
+        s.assembleWhile(c, sWhile);
+
+    }
+
+    /**
+     * Parses a CALL statement from {@code tokens} into {@code s}.
+     *
+     * @param tokens
+     *            the input tokens
+     * @param s
+     *            the parsed statement
+     * @replaces s
+     * @updates tokens
+     * @requires [identifier string is a proper prefix of tokens]
+     * @ensures <pre>
+     * s =
+     *   [CALL Statement corresponding to identifier string at start of #tokens]  and
+     *  #tokens = [identifier string at start of #tokens] * tokens
+     * </pre>
+     */
+    private static void parseCall(Queue<String> tokens, Statement s) {
+        assert tokens != null : "Violation of: tokens is not null";
+        assert s != null : "Violation of: s is not null";
+        assert tokens.length() > 0
+                && Tokenizer.isIdentifier(tokens.front()) : ""
+                        + "Violation of: identifier string is proper prefix of tokens";
+
+        // TODO - fill in body
+        String call = tokens.dequeue();
+        Reporter.assertElseFatalError(Tokenizer.isIdentifier(call)
+                && !Tokenizer.isCondition(call) && !Tokenizer.isKeyword(call),
+                "Not a valid call.");
+        s.assembleCall(call);
+
+    }
+
+    /*
+     * Constructors -----------------------------------------------------------
+     */
+
+    /**
+     * No-argument constructor.
+     */
+    public Statement1Parse1() {
+        super();
+    }
+
+    /*
+     * Public methods ---------------------------------------------------------
+     */
+
+    @Override
+    public void parse(Queue<String> tokens) {
+        assert tokens != null : "Violation of: tokens is not null";
+        assert tokens.length() > 0 : ""
+                + "Violation of: Tokenizer.END_OF_INPUT is a suffix of tokens";
+
+        // TODO - fill in body
+        String front = tokens.front();
+        Reporter.assertElseFatalError(Tokenizer.isIdentifier(front)
+                || front.equals("IF") || front.equals("WHILE"),
+                "Not a valid call: " + front);
+        switch (front) {
+            case "IF":
+                parseIf(tokens, this);
+                break;
+            case "WHILE":
+                parseWhile(tokens, this);
+                break;
+            default:
+                parseCall(tokens, this);
+
+        }
+
+    }
+
+    @Override
+    public void parseBlock(Queue<String> tokens) {
+        assert tokens != null : "Violation of: tokens is not null";
+        assert tokens.length() > 0 : ""
+                + "Violation of: Tokenizer.END_OF_INPUT is a suffix of tokens";
+
+        // TODO - fill in body
+        Statement s = this.newInstance();
+        while (tokens.front().equals("IF") || tokens.front().equals("WHILE")
+                || Tokenizer.isIdentifier(tokens.front())) {
+            this.parse(tokens);
+            s.addToBlock(s.lengthOfBlock(), this);
+        }
+        this.transferFrom(s);
+    }
+
+    /*
+     * Main test method -------------------------------------------------------
+     */
+
+    /**
+     * Main method.
+     *
+     * @param args
+     *            the command line arguments
+     */
+    public static void main(String[] args) {
+        SimpleReader in = new SimpleReader1L();
+        SimpleWriter out = new SimpleWriter1L();
+        /*
+         * Get input file name
+         */
+        out.print("Enter valid BL statement(s) file name: ");
+        String fileName = in.nextLine();
+        /*
+         * Parse input file
+         */
+        out.println("*** Parsing input file ***");
+        Statement s = new Statement1Parse1();
+        SimpleReader file = new SimpleReader1L(fileName);
+        Queue<String> tokens = Tokenizer.tokens(file);
+        file.close();
+        s.parse(tokens); // replace with parseBlock to test other method
+        /*
+         * Pretty print the statement(s)
+         */
+        out.println("*** Pretty print of parsed statement(s) ***");
+        s.prettyPrint(out, 0);
+
+        in.close();
+        out.close();
+    }
+
+}

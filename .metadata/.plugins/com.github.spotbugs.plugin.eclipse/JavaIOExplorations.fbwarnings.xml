@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.2" sequence="3" timestamp="1606773294908" analysisTimestamp="1606773294215" release="">
+  <Project projectName="JavaIOExplorations">
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/JavaIOExplorations/bin/CopyFileStdJava.class</Jar>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/JavaIOExplorations/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/JavaIOExplorations/src</SrcDir>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/JavaIOExplorations/test</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="CopyFileStdJava">
+      <SourceLine classname="CopyFileStdJava" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Class>
+    <Method classname="CopyFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CopyFileStdJava" start="34" end="57" startBytecode="0" endBytecode="373" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="60" end="61" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="CopyFileStdJava" start="34" end="34" startBytecode="11" endBytecode="11" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    <SourceLine classname="CopyFileStdJava" start="34" end="34" startBytecode="11" endBytecode="11" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="CopyFileStdJava">
+      <SourceLine classname="CopyFileStdJava" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Class>
+    <Method classname="CopyFileStdJava" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CopyFileStdJava" start="34" end="57" startBytecode="0" endBytecode="373" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="66" end="67" startBytecode="0" endBytecode="68" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="CopyFileStdJava" start="35" end="35" startBytecode="33" endBytecode="33" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+    <SourceLine classname="CopyFileStdJava" start="35" end="35" startBytecode="33" endBytecode="33" sourcefile="CopyFileStdJava.java" sourcepath="CopyFileStdJava.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 30 Nov 2020 16:54:54 -0500" total_classes="1" referenced_classes="23" total_bugs="2" total_size="21" num_packages="1" java_version="14.0.2" vm_version="14.0.2+12-46" cpu_seconds="2.18" clock_seconds="0.70" peak_mbytes="511.13" alloc_mbytes="2048.00" gc_seconds="0.05" priority_1="2">
+    <PackageStats package="" total_bugs="2" total_types="1" total_size="21" priority_1="2">
+      <ClassStats class="CopyFileStdJava" sourceFile="CopyFileStdJava.java" interface="false" size="21" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="344" invocations="387" avgMicrosecondsPerInvocation="890" maxMicrosecondsPerInvocation="26703" standardDeviationMicrosecondsPerInvocation="2445"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="144" invocations="2" avgMicrosecondsPerInvocation="72249" maxMicrosecondsPerInvocation="133406" standardDeviationMicrosecondsPerInvocation="61157"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="40" invocations="388" avgMicrosecondsPerInvocation="104" maxMicrosecondsPerInvocation="21103" standardDeviationMicrosecondsPerInvocation="1070"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1606772548586" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1606772548588" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1606772823021" release="" codeSize="21" numClasses="1"/>
+  </History>
+</BugCollection>

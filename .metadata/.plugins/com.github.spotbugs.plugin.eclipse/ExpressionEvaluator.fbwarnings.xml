@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.2" sequence="19" timestamp="1604434283752" analysisTimestamp="1604434283394" release="">
+  <Project projectName="ExpressionEvaluator">
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/ExpressionEvaluator/bin/BooleanExpressionEvaluator.class</Jar>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/ExpressionEvaluator/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/ExpressionEvaluator/test</SrcDir>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/ExpressionEvaluator/src</SrcDir>
+  </Project>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE" first="13" last="13" removedByChange="true">
+    <Class classname="BooleanExpressionEvaluator">
+      <SourceLine classname="BooleanExpressionEvaluator" sourcefile="BooleanExpressionEvaluator.java" sourcepath="BooleanExpressionEvaluator.java"/>
+    </Class>
+    <Method classname="BooleanExpressionEvaluator" name="valueOfBoolExpr" signature="(Lcomponents/queue/Queue;)Z" isStatic="true">
+      <SourceLine classname="BooleanExpressionEvaluator" start="104" end="131" startBytecode="0" endBytecode="76" sourcefile="BooleanExpressionEvaluator.java" sourcepath="BooleanExpressionEvaluator.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="134" end="3807" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="" role="STRING_CONSTANT"/>
+    <LocalVariable name="s" register="2" pc="199" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="BooleanExpressionEvaluator" start="109" end="109" startBytecode="201" endBytecode="201" sourcefile="BooleanExpressionEvaluator.java" sourcepath="BooleanExpressionEvaluator.java"/>
+    <SourceLine classname="BooleanExpressionEvaluator" start="109" end="109" startBytecode="201" endBytecode="201" sourcefile="BooleanExpressionEvaluator.java" sourcepath="BooleanExpressionEvaluator.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.EMPTY_AND_UNKNOWN" value="true"/>
+  </BugInstance>
+  <BugInstance type="IL_INFINITE_LOOP" priority="1" rank="8" abbrev="IL" category="CORRECTNESS" first="13" last="13" removedByChange="true">
+    <Class classname="BooleanExpressionEvaluator">
+      <SourceLine classname="BooleanExpressionEvaluator" sourcefile="BooleanExpressionEvaluator.java" sourcepath="BooleanExpressionEvaluator.java"/>
+    </Class>
+    <Method classname="BooleanExpressionEvaluator" name="valueOfBoolExpr" signature="(Lcomponents/queue/Queue;)Z" isStatic="true">
+      <SourceLine classname="BooleanExpressionEvaluator" start="104" end="131" startBytecode="0" endBytecode="386" sourcefile="BooleanExpressionEvaluator.java" sourcepath="BooleanExpressionEvaluator.java"/>
+    </Method>
+    <SourceLine classname="BooleanExpressionEvaluator" start="109" end="109" startBytecode="201" endBytecode="201" sourcefile="BooleanExpressionEvaluator.java" sourcepath="BooleanExpressionEvaluator.java"/>
+    <LocalVariable name="s" register="2" pc="201" role="LOCAL_VARIABLE_NAMED"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1" last="4" removedByChange="true">
+    <Class classname="ExpressionEvaluator">
+      <SourceLine classname="ExpressionEvaluator" sourcefile="ExpressionEvaluator.java" sourcepath="ExpressionEvaluator.java"/>
+    </Class>
+    <Method classname="ExpressionEvaluator" name="valueOfDigitSeq" signature="(Ljava/lang/StringBuilder;)I" isStatic="true">
+      <SourceLine classname="ExpressionEvaluator" start="66" end="75" startBytecode="0" endBytecode="177" sourcefile="ExpressionEvaluator.java" sourcepath="ExpressionEvaluator.java"/>
+    </Method>
+    <SourceLine classname="ExpressionEvaluator" start="72" end="72" startBytecode="33" endBytecode="33" sourcefile="ExpressionEvaluator.java" sourcepath="ExpressionEvaluator.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 3 Nov 2020 15:11:23 -0500" total_classes="1" referenced_classes="20" total_bugs="0" total_size="64" num_packages="1" java_version="14.0.2" vm_version="14.0.2+12-46" cpu_seconds="0.78" clock_seconds="0.36" peak_mbytes="916.80" alloc_mbytes="2048.00" gc_seconds="0.02">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="64">
+      <ClassStats class="BooleanExpressionEvaluator" sourceFile="BooleanExpressionEvaluator.java" interface="false" size="64" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="118" invocations="365" avgMicrosecondsPerInvocation="323" maxMicrosecondsPerInvocation="19879" standardDeviationMicrosecondsPerInvocation="1147"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="87" invocations="2" avgMicrosecondsPerInvocation="43688" maxMicrosecondsPerInvocation="79524" standardDeviationMicrosecondsPerInvocation="35836"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="21" invocations="20" avgMicrosecondsPerInvocation="1096" maxMicrosecondsPerInvocation="7024" standardDeviationMicrosecondsPerInvocation="1841"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="12" invocations="366" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="188" standardDeviationMicrosecondsPerInvocation="22"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="12" invocations="330" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="635" standardDeviationMicrosecondsPerInvocation="67"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="12" invocations="20" avgMicrosecondsPerInvocation="610" maxMicrosecondsPerInvocation="5257" standardDeviationMicrosecondsPerInvocation="1141"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1604425709866" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1604425709868" release="" codeSize="71" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1604425753547" release="" codeSize="70" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1604425761706" release="" codeSize="69" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1604425771950" release="" codeSize="69" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1604426093195" release="" codeSize="68" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1604426137059" release="" codeSize="68" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1604432337026" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1604432340286" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1604433347715" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1604433414299" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1604433420051" release="" codeSize="47" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1604433426302" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1604433441332" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1604433465326" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1604433549677" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1604433573450" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1604434141184" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1604434149021" release="" codeSize="64" numClasses="1"/>
+  </History>
+</BugCollection>

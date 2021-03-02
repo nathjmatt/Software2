@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.2" sequence="8" timestamp="1602107618347" analysisTimestamp="1602107616015" release="">
+  <Project projectName="BinaryTreeMethods">
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/BinaryTreeMethods/bin/BinaryTreeMethodsTest.class</Jar>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/BinaryTreeMethods/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/BinaryTreeMethods/lib/binary-tree-utility.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/BinaryTreeMethods/test</SrcDir>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/BinaryTreeMethods/src</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1" last="1" removedByChange="true">
+    <Class classname="BinaryTreeMethods">
+      <SourceLine classname="BinaryTreeMethods" sourcefile="BinaryTreeMethods.java" sourcepath="BinaryTreeMethods.java"/>
+    </Class>
+    <Method classname="BinaryTreeMethods" name="height" signature="(Lcomponents/binarytree/BinaryTree;)I" isStatic="true">
+      <SourceLine classname="BinaryTreeMethods" start="33" end="53" startBytecode="0" endBytecode="47" sourcefile="BinaryTreeMethods.java" sourcepath="BinaryTreeMethods.java"/>
+    </Method>
+    <LocalVariable name="root" register="4" pc="61" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="BinaryTreeMethods" start="40" end="40" startBytecode="59" endBytecode="59" sourcefile="BinaryTreeMethods.java" sourcepath="BinaryTreeMethods.java"/>
+    <SourceLine classname="BinaryTreeMethods" start="40" end="40" startBytecode="59" endBytecode="59" sourcefile="BinaryTreeMethods.java" sourcepath="BinaryTreeMethods.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="root"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 6 Oct 2020 17:00:16 -0400" total_classes="1" referenced_classes="19" total_bugs="0" total_size="112" num_packages="1" java_version="14.0.2" vm_version="14.0.2+12-46" cpu_seconds="8.26" clock_seconds="2.35" peak_mbytes="437.08" alloc_mbytes="2048.00" gc_seconds="0.06">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="112">
+      <ClassStats class="BinaryTreeMethodsTest" sourceFile="BinaryTreeMethodsTest.java" interface="false" size="112" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="933" invocations="2" avgMicrosecondsPerInvocation="466646" maxMicrosecondsPerInvocation="672445" standardDeviationMicrosecondsPerInvocation="205798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="378" invocations="367" avgMicrosecondsPerInvocation="1031" maxMicrosecondsPerInvocation="46954" standardDeviationMicrosecondsPerInvocation="3258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="201" invocations="369" avgMicrosecondsPerInvocation="546" maxMicrosecondsPerInvocation="23014" standardDeviationMicrosecondsPerInvocation="1713"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="54" invocations="19" avgMicrosecondsPerInvocation="2847" maxMicrosecondsPerInvocation="18660" standardDeviationMicrosecondsPerInvocation="4468"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="50" invocations="14" avgMicrosecondsPerInvocation="3607" maxMicrosecondsPerInvocation="30947" standardDeviationMicrosecondsPerInvocation="7867"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="46" invocations="14" avgMicrosecondsPerInvocation="3336" maxMicrosecondsPerInvocation="44008" standardDeviationMicrosecondsPerInvocation="11282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="43" invocations="19" avgMicrosecondsPerInvocation="2268" maxMicrosecondsPerInvocation="12838" standardDeviationMicrosecondsPerInvocation="3408"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1600793184965" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1600793184969" release="" codeSize="50" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1600793229984" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1600793245226" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1600793433863" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1600793650029" release="" codeSize="55" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1602015545068" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1602017153348" release="" codeSize="71" numClasses="1"/>
+  </History>
+</BugCollection>

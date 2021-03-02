@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.2" sequence="37" timestamp="1598563434128" analysisTimestamp="1598563433853" release="">
+  <Project projectName="SequenceSmooth">
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/SequenceSmooth/bin/SequenceSmooth.class</Jar>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/SequenceSmooth/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/SequenceSmooth/src</SrcDir>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/SequenceSmooth/test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="32" last="34" removedByChange="true">
+    <Class classname="SequenceSmooth">
+      <SourceLine classname="SequenceSmooth" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    </Class>
+    <Method classname="SequenceSmooth" name="smooth" signature="(Lcomponents/sequence/Sequence;Lcomponents/sequence/Sequence;)Lcomponents/sequence/Sequence;" isStatic="true">
+      <SourceLine classname="SequenceSmooth" start="111" end="125" startBytecode="0" endBytecode="67" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    </Method>
+    <LocalVariable name="average" register="5" pc="108" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="SequenceSmooth" start="120" end="120" startBytecode="106" endBytecode="106" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    <SourceLine classname="SequenceSmooth" start="120" end="120" startBytecode="106" endBytecode="106" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="average"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="34" last="34" removedByChange="true">
+    <Class classname="SequenceSmooth">
+      <SourceLine classname="SequenceSmooth" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    </Class>
+    <Method classname="SequenceSmooth" name="smooth" signature="(Lcomponents/sequence/Sequence;Lcomponents/sequence/Sequence;)Lcomponents/sequence/Sequence;" isStatic="true">
+      <SourceLine classname="SequenceSmooth" start="111" end="125" startBytecode="0" endBytecode="67" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    </Method>
+    <LocalVariable name="temp" register="2" pc="114" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="SequenceSmooth" start="122" end="122" startBytecode="113" endBytecode="113" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    <SourceLine classname="SequenceSmooth" start="122" end="122" startBytecode="113" endBytecode="113" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="temp"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="11" last="11" removedByChange="true">
+    <Class classname="SequenceSmooth">
+      <SourceLine classname="SequenceSmooth" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    </Class>
+    <Method classname="SequenceSmooth" name="smooth" signature="(Lcomponents/sequence/Sequence;Lcomponents/sequence/Sequence;)V" isStatic="true">
+      <SourceLine classname="SequenceSmooth" start="36" end="57" startBytecode="0" endBytecode="61" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    </Method>
+    <LocalVariable name="average" register="4" pc="111" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="SequenceSmooth" start="50" end="50" startBytecode="109" endBytecode="109" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    <SourceLine classname="SequenceSmooth" start="50" end="50" startBytecode="109" endBytecode="109" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="average"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="12" last="12" removedByChange="true">
+    <Class classname="SequenceSmooth">
+      <SourceLine classname="SequenceSmooth" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    </Class>
+    <Method classname="SequenceSmooth" name="smooth" signature="(Lcomponents/sequence/Sequence;Lcomponents/sequence/Sequence;)V" isStatic="true">
+      <SourceLine classname="SequenceSmooth" start="36" end="59" startBytecode="0" endBytecode="68" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    </Method>
+    <LocalVariable name="s2Temp" register="2" pc="76" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="SequenceSmooth" start="47" end="47" startBytecode="75" endBytecode="75" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    <SourceLine classname="SequenceSmooth" start="47" end="47" startBytecode="75" endBytecode="75" sourcefile="SequenceSmooth.java" sourcepath="SequenceSmooth.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="s2Temp"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 27 Aug 2020 17:23:53 -0400" total_classes="1" referenced_classes="14" total_bugs="0" total_size="22" num_packages="1" java_version="14.0.2" vm_version="14.0.2+12-46" cpu_seconds="0.85" clock_seconds="0.28" peak_mbytes="502.10" alloc_mbytes="2048.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="22">
+      <ClassStats class="SequenceSmooth" sourceFile="SequenceSmooth.java" interface="false" size="22" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="103" invocations="325" avgMicrosecondsPerInvocation="318" maxMicrosecondsPerInvocation="20577" standardDeviationMicrosecondsPerInvocation="1241"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="69" invocations="2" avgMicrosecondsPerInvocation="34613" maxMicrosecondsPerInvocation="63260" standardDeviationMicrosecondsPerInvocation="28647"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="12" invocations="291" avgMicrosecondsPerInvocation="41" maxMicrosecondsPerInvocation="608" standardDeviationMicrosecondsPerInvocation="78"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="11" invocations="326" avgMicrosecondsPerInvocation="36" maxMicrosecondsPerInvocation="406" standardDeviationMicrosecondsPerInvocation="31"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1598487587636" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1598487587638" release="" codeSize="12" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1598487606297" release="" codeSize="12" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1598487730378" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1598487745548" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1598487865980" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1598488042908" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1598488237812" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1598488252320" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1598488585437" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1598488594678" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1598488979509" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1598489191437" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1598489823542" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1598490105143" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1598490108770" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1598545788713" release="" codeSize="82" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1598547357807" release="" codeSize="102" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1598547439470" release="" codeSize="102" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1598547595476" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1598547953399" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1598547968217" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1598548716118" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1598548880886" release="" codeSize="26" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1598548886742" release="" codeSize="18" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1598548914925" release="" codeSize="18" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1598549495232" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1598549526481" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1598549585858" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1598549594925" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1598549633541" release="" codeSize="22" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1598561074389" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1598561715987" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1598561856324" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1598561905382" release="" codeSize="36" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1598562123891" release="" codeSize="37" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1598562287580" release="" codeSize="37" numClasses="1"/>
+  </History>
+</BugCollection>

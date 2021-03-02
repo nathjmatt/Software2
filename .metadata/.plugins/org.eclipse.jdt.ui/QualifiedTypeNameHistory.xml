@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="components.stack.Stack1L"/>
+    <fullyQualifiedTypeName name="components.queue.QueueSecondary"/>
+    <fullyQualifiedTypeName name="components.set.Set3"/>
+    <fullyQualifiedTypeName name="components.binarytree.BinaryTree"/>
+    <fullyQualifiedTypeName name="components.binarytree.BinaryTree1"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="List3.Node"/>
+    <fullyQualifiedTypeName name="components.statement.Statement"/>
+    <fullyQualifiedTypeName name="components.program.Program"/>
+    <fullyQualifiedTypeName name="components.statement.StatementKernel"/>
+    <fullyQualifiedTypeName name="components.statement.StatementKernel.Condition"/>
+    <fullyQualifiedTypeName name="components.set.Set1L"/>
+    <fullyQualifiedTypeName name="components.program.Program.Instruction"/>
+    <fullyQualifiedTypeName name="components.utilities.Reporter"/>
+    <fullyQualifiedTypeName name="components.utilities.Tokenizer"/>
+    <fullyQualifiedTypeName name="components.utilities.FormatChecker"/>
+    <fullyQualifiedTypeName name="TagCloud.IntegerLT"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="components.map.Map2"/>
+    <fullyQualifiedTypeName name="components.map.Map.Pair"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="components.map.Map"/>
+    <fullyQualifiedTypeName name="components.map.Map1L"/>
+    <fullyQualifiedTypeName name="components.set.Set"/>
+    <fullyQualifiedTypeName name="components.queue.Queue1L"/>
+    <fullyQualifiedTypeName name="components.queue.Queue"/>
+    <fullyQualifiedTypeName name="components.naturalnumber.NaturalNumber"/>
+    <fullyQualifiedTypeName name="components.naturalnumber.NaturalNumber2"/>
+    <fullyQualifiedTypeName name="components.tree.Tree1"/>
+    <fullyQualifiedTypeName name="components.tree.Tree"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.2" sequence="4" timestamp="1599152106424" analysisTimestamp="1599152104403" release="">
+  <Project projectName="Queue3">
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/Queue3/bin/Queue3.class</Jar>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/Queue3/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/Queue3/src</SrcDir>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/Queue3/test</SrcDir>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1" last="1" removedByChange="true">
+    <Class classname="Queue3">
+      <SourceLine classname="Queue3" sourcefile="Queue3.java" sourcepath="Queue3.java"/>
+    </Class>
+    <Field classname="Queue3" name="entries" signature="Lcomponents/sequence/Sequence;" isStatic="false">
+      <SourceLine classname="Queue3" start="23" end="23" startBytecode="0" endBytecode="0" sourcefile="Queue3.java" sourcepath="Queue3.java"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 3 Sep 2020 12:55:03 -0400" total_classes="1" referenced_classes="28" total_bugs="0" total_size="28" num_packages="1" java_version="14.0.2" vm_version="14.0.2+12-46" cpu_seconds="5.80" clock_seconds="2.04" peak_mbytes="796.72" alloc_mbytes="2048.00" gc_seconds="0.05">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="28">
+      <ClassStats class="Queue3" sourceFile="Queue3.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="895" invocations="2" avgMicrosecondsPerInvocation="447709" maxMicrosecondsPerInvocation="739829" standardDeviationMicrosecondsPerInvocation="292120"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="392" invocations="399" avgMicrosecondsPerInvocation="984" maxMicrosecondsPerInvocation="22083" standardDeviationMicrosecondsPerInvocation="2331"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="96" invocations="403" avgMicrosecondsPerInvocation="240" maxMicrosecondsPerInvocation="5037" standardDeviationMicrosecondsPerInvocation="420"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="65" invocations="28" avgMicrosecondsPerInvocation="2335" maxMicrosecondsPerInvocation="26109" standardDeviationMicrosecondsPerInvocation="5162"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1599083432037" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1599083432038" release="" codeSize="12" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1599083828191" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1599085500190" release="" codeSize="28" numClasses="1"/>
+  </History>
+</BugCollection>

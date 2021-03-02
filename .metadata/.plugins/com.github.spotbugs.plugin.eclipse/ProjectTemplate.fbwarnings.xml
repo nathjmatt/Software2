@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.2" sequence="9" timestamp="1607474419282" analysisTimestamp="1607474418210" release="">
+  <Project projectName="ProjectTemplate">
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/ProjectTemplate/bin/ProgramWithIOAndStaticMethod.class</Jar>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/ProjectTemplate/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/ProjectTemplate/src</SrcDir>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/ProjectTemplate/test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1" last="1" removedByChange="true">
+    <Class classname="ProgramWithIOAndStaticMethod">
+      <SourceLine classname="ProgramWithIOAndStaticMethod" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    </Class>
+    <Method classname="ProgramWithIOAndStaticMethod" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ProgramWithIOAndStaticMethod" start="45" end="58" startBytecode="0" endBytecode="21" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    </Method>
+    <LocalVariable name="in" register="1" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ProgramWithIOAndStaticMethod" start="45" end="45" startBytecode="7" endBytecode="7" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    <SourceLine classname="ProgramWithIOAndStaticMethod" start="45" end="45" startBytecode="7" endBytecode="7" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="in"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1" last="1" removedByChange="true">
+    <Class classname="ProgramWithIOAndStaticMethod">
+      <SourceLine classname="ProgramWithIOAndStaticMethod" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    </Class>
+    <Method classname="ProgramWithIOAndStaticMethod" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ProgramWithIOAndStaticMethod" start="45" end="58" startBytecode="0" endBytecode="21" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    </Method>
+    <LocalVariable name="out" register="2" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ProgramWithIOAndStaticMethod" start="46" end="46" startBytecode="15" endBytecode="15" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    <SourceLine classname="ProgramWithIOAndStaticMethod" start="46" end="46" startBytecode="15" endBytecode="15" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="out"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 8 Dec 2020 19:40:18 -0500" total_classes="1" referenced_classes="20" total_bugs="0" total_size="28" num_packages="1" java_version="14.0.2" vm_version="14.0.2+12-46" cpu_seconds="1.69" clock_seconds="1.17" peak_mbytes="543.54" alloc_mbytes="2048.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="28">
+      <ClassStats class="ProgramWithIOAndStaticMethod" sourceFile="ProgramWithIOAndStaticMethod.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="343" invocations="2" avgMicrosecondsPerInvocation="171632" maxMicrosecondsPerInvocation="324220" standardDeviationMicrosecondsPerInvocation="152588"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="284" invocations="352" avgMicrosecondsPerInvocation="809" maxMicrosecondsPerInvocation="90425" standardDeviationMicrosecondsPerInvocation="5128"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="117" invocations="3" avgMicrosecondsPerInvocation="39176" maxMicrosecondsPerInvocation="115917" standardDeviationMicrosecondsPerInvocation="54264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="67" invocations="20" avgMicrosecondsPerInvocation="3389" maxMicrosecondsPerInvocation="60261" standardDeviationMicrosecondsPerInvocation="13106"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1607474123143" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1607474123145" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1607474137359" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1607474140482" release="" codeSize="10" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1607474189264" release="" codeSize="27" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1607474251075" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1607474272435" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1607474284134" release="" codeSize="25" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1607474349680" release="" codeSize="27" numClasses="1"/>
+  </History>
+</BugCollection>

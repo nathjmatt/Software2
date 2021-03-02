@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.2" sequence="41" timestamp="1606155605053" analysisTimestamp="1606155604731" release="">
+  <Project projectName="WordCounter">
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/WordCounter/bin/WordCounter$StringLT.class</Jar>
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/WordCounter/bin/WordCounter.class</Jar>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/WordCounter/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/WordCounter/test</SrcDir>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/WordCounter/src</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="3" last="7" removedByChange="true">
+    <Class classname="WordCounter">
+      <SourceLine classname="WordCounter" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Class>
+    <Method classname="WordCounter" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="WordCounter" start="184" end="205" startBytecode="0" endBytecode="28" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Method>
+    <LocalVariable name="words" register="4" pc="40" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="WordCounter" start="193" end="193" startBytecode="38" endBytecode="38" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <SourceLine classname="WordCounter" start="193" end="193" startBytecode="38" endBytecode="38" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="words"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="27" last="28" removedByChange="true">
+    <Class classname="WordCounter">
+      <SourceLine classname="WordCounter" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Class>
+    <Method classname="WordCounter" name="outputIndexPage" signature="(Ljava/lang/String;Lcomponents/queue/Queue;Lcomponents/map/Map;)V" isStatic="true">
+      <SourceLine classname="WordCounter" start="248" end="281" startBytecode="0" endBytecode="107" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Method>
+    <LocalVariable name="html" register="3" pc="9" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="WordCounter" start="248" end="248" startBytecode="8" endBytecode="8" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <SourceLine classname="WordCounter" start="248" end="248" startBytecode="8" endBytecode="8" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="html"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="30" last="34" removedByChange="true">
+    <Class classname="WordCounter">
+      <SourceLine classname="WordCounter" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Class>
+    <Method classname="WordCounter" name="outputIndexPage" signature="(Ljava/lang/String;Lcomponents/queue/Queue;Lcomponents/map/Map;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="WordCounter" start="248" end="286" startBytecode="0" endBytecode="112" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Method>
+    <LocalVariable name="html" register="4" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="WordCounter" start="248" end="248" startBytecode="8" endBytecode="8" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <SourceLine classname="WordCounter" start="248" end="248" startBytecode="8" endBytecode="8" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="html"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="35">
+    <Class classname="WordCounter">
+      <SourceLine classname="WordCounter" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Class>
+    <Method classname="WordCounter" name="outputPage" signature="(Ljava/lang/String;Lcomponents/queue/Queue;Lcomponents/map/Map;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="WordCounter" start="257" end="313" startBytecode="0" endBytecode="126" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Method>
+    <LocalVariable name="html" register="4" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="WordCounter" start="257" end="257" startBytecode="8" endBytecode="8" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <SourceLine classname="WordCounter" start="257" end="257" startBytecode="8" endBytecode="8" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="html"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="3" last="34" removedByChange="true">
+    <Class classname="WordCounter">
+      <SourceLine classname="WordCounter" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Class>
+    <Method classname="WordCounter" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="WordCounter" start="295" end="324" startBytecode="0" endBytecode="44" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Method>
+    <LocalVariable name="fileName" register="7" pc="92" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="WordCounter" start="317" end="317" startBytecode="90" endBytecode="90" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <SourceLine classname="WordCounter" start="317" end="317" startBytecode="90" endBytecode="90" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="fileName"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="5" last="30" removedByChange="true">
+    <Class classname="WordCounter">
+      <SourceLine classname="WordCounter" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Class>
+    <Method classname="WordCounter" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="WordCounter" start="291" end="321" startBytecode="0" endBytecode="46" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Method>
+    <LocalVariable name="folder" register="7" pc="92" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="WordCounter" start="313" end="313" startBytecode="90" endBytecode="90" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <SourceLine classname="WordCounter" start="313" end="313" startBytecode="90" endBytecode="90" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="folder"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" rank="3" abbrev="RV" category="CORRECTNESS" first="7" last="20" removedByChange="true">
+    <Class classname="WordCounter">
+      <SourceLine classname="WordCounter" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Class>
+    <Method classname="WordCounter" name="getWords" signature="(Ljava/lang/String;Lcomponents/map/Map;)V" isStatic="true">
+      <SourceLine classname="WordCounter" start="181" end="209" startBytecode="0" endBytecode="480" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="toLowerCase" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="2563" end="2563" startBytecode="0" endBytecode="49" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="WordCounter" start="196" end="196" startBytecode="88" endBytecode="88" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    <SourceLine classname="WordCounter" start="196" end="196" startBytecode="88" endBytecode="88" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+  </BugInstance>
+  <BugInstance type="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE" priority="2" rank="19" abbrev="Se" category="BAD_PRACTICE" first="4">
+    <Class classname="WordCounter$StringLT">
+      <SourceLine classname="WordCounter$StringLT" start="1" end="38" sourcefile="WordCounter.java" sourcepath="WordCounter.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 23 Nov 2020 13:20:04 -0500" total_classes="2" referenced_classes="47" total_bugs="2" total_size="146" num_packages="1" java_version="14.0.2" vm_version="14.0.2+12-46" cpu_seconds="0.73" clock_seconds="0.32" peak_mbytes="701.43" alloc_mbytes="2048.00" gc_seconds="0.00" priority_2="1" priority_1="1">
+    <PackageStats package="" total_bugs="2" total_types="2" total_size="146" priority_2="1" priority_1="1">
+      <ClassStats class="WordCounter" sourceFile="WordCounter.java" interface="false" size="138" bugs="1" priority_1="1"/>
+      <ClassStats class="WordCounter$StringLT" sourceFile="WordCounter.java" interface="false" size="8" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="80" invocations="517" avgMicrosecondsPerInvocation="155" maxMicrosecondsPerInvocation="2513" standardDeviationMicrosecondsPerInvocation="305"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="66" invocations="2" avgMicrosecondsPerInvocation="33373" maxMicrosecondsPerInvocation="61218" standardDeviationMicrosecondsPerInvocation="27845"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="25" invocations="518" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="7892" standardDeviationMicrosecondsPerInvocation="436"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="14" invocations="47" avgMicrosecondsPerInvocation="303" maxMicrosecondsPerInvocation="2513" standardDeviationMicrosecondsPerInvocation="525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="11" invocations="47" avgMicrosecondsPerInvocation="252" maxMicrosecondsPerInvocation="1858" standardDeviationMicrosecondsPerInvocation="417"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1599175639446" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1599175639447" release="" codeSize="25" numClasses="3"/>
+    <AppVersion sequence="2" timestamp="1599175665336" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1599175919718" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1599176091001" release="" codeSize="22" numClasses="2"/>
+    <AppVersion sequence="5" timestamp="1599176502996" release="" codeSize="70" numClasses="2"/>
+    <AppVersion sequence="6" timestamp="1599177514964" release="" codeSize="82" numClasses="2"/>
+    <AppVersion sequence="7" timestamp="1599177755425" release="" codeSize="82" numClasses="2"/>
+    <AppVersion sequence="8" timestamp="1599177849320" release="" codeSize="83" numClasses="2"/>
+    <AppVersion sequence="9" timestamp="1599177862461" release="" codeSize="84" numClasses="2"/>
+    <AppVersion sequence="10" timestamp="1599177909882" release="" codeSize="84" numClasses="2"/>
+    <AppVersion sequence="11" timestamp="1599178303895" release="" codeSize="100" numClasses="2"/>
+    <AppVersion sequence="12" timestamp="1599178374251" release="" codeSize="101" numClasses="2"/>
+    <AppVersion sequence="13" timestamp="1599178419188" release="" codeSize="90" numClasses="2"/>
+    <AppVersion sequence="14" timestamp="1599178454912" release="" codeSize="104" numClasses="2"/>
+    <AppVersion sequence="15" timestamp="1599178458284" release="" codeSize="104" numClasses="2"/>
+    <AppVersion sequence="16" timestamp="1599178510146" release="" codeSize="104" numClasses="2"/>
+    <AppVersion sequence="17" timestamp="1599178802809" release="" codeSize="84" numClasses="2"/>
+    <AppVersion sequence="18" timestamp="1599178855352" release="" codeSize="100" numClasses="2"/>
+    <AppVersion sequence="19" timestamp="1599178859759" release="" codeSize="99" numClasses="2"/>
+    <AppVersion sequence="20" timestamp="1599178893136" release="" codeSize="100" numClasses="2"/>
+    <AppVersion sequence="21" timestamp="1599178899041" release="" codeSize="99" numClasses="2"/>
+    <AppVersion sequence="22" timestamp="1599178944390" release="" codeSize="99" numClasses="2"/>
+    <AppVersion sequence="23" timestamp="1599178955665" release="" codeSize="100" numClasses="2"/>
+    <AppVersion sequence="24" timestamp="1599179022919" release="" codeSize="98" numClasses="2"/>
+    <AppVersion sequence="25" timestamp="1599179059224" release="" codeSize="104" numClasses="2"/>
+    <AppVersion sequence="26" timestamp="1599179074230" release="" codeSize="105" numClasses="2"/>
+    <AppVersion sequence="27" timestamp="1599179165340" release="" codeSize="136" numClasses="2"/>
+    <AppVersion sequence="28" timestamp="1599179194554" release="" codeSize="136" numClasses="2"/>
+    <AppVersion sequence="29" timestamp="1599179233205" release="" codeSize="107" numClasses="2"/>
+    <AppVersion sequence="30" timestamp="1599179240066" release="" codeSize="137" numClasses="2"/>
+    <AppVersion sequence="31" timestamp="1599179358156" release="" codeSize="138" numClasses="2"/>
+    <AppVersion sequence="32" timestamp="1599179463173" release="" codeSize="125" numClasses="2"/>
+    <AppVersion sequence="33" timestamp="1599179843113" release="" codeSize="139" numClasses="2"/>
+    <AppVersion sequence="34" timestamp="1599179930499" release="" codeSize="140" numClasses="2"/>
+    <AppVersion sequence="35" timestamp="1599180151466" release="" codeSize="146" numClasses="2"/>
+    <AppVersion sequence="36" timestamp="1599180715389" release="" codeSize="146" numClasses="2"/>
+    <AppVersion sequence="37" timestamp="1599180950687" release="" codeSize="146" numClasses="2"/>
+    <AppVersion sequence="38" timestamp="1599181000594" release="" codeSize="146" numClasses="2"/>
+    <AppVersion sequence="39" timestamp="1599181237041" release="" codeSize="146" numClasses="2"/>
+    <AppVersion sequence="40" timestamp="1599578088955" release="" codeSize="146" numClasses="2"/>
+  </History>
+</BugCollection>

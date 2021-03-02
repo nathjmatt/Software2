@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.2" sequence="11" timestamp="1602610755293" analysisTimestamp="1602610754922" release="">
+  <Project projectName="ListWithTwoSmartNodes">
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/ListWithTwoSmartNodes/bin/List2a$List2aIterator.class</Jar>
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/ListWithTwoSmartNodes/bin/List2a$Node.class</Jar>
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/ListWithTwoSmartNodes/bin/List2a.class</Jar>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/ListWithTwoSmartNodes/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/ListWithTwoSmartNodes/test</SrcDir>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/ListWithTwoSmartNodes/src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 13 Oct 2020 13:39:14 -0400" total_classes="3" referenced_classes="29" total_bugs="0" total_size="128" num_packages="1" java_version="14.0.2" vm_version="14.0.2+12-46" cpu_seconds="0.82" clock_seconds="0.37" peak_mbytes="932.95" alloc_mbytes="2048.00" gc_seconds="0.00">
+    <PackageStats package="" total_bugs="0" total_types="3" total_size="128">
+      <ClassStats class="List2a" sourceFile="List2a.java" interface="false" size="90" bugs="0"/>
+      <ClassStats class="List2a$List2aIterator" sourceFile="List2a.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="List2a$Node" sourceFile="List2a.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="99" invocations="401" avgMicrosecondsPerInvocation="249" maxMicrosecondsPerInvocation="5818" standardDeviationMicrosecondsPerInvocation="553"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="86" invocations="2" avgMicrosecondsPerInvocation="43185" maxMicrosecondsPerInvocation="78977" standardDeviationMicrosecondsPerInvocation="35792"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="19" invocations="367" avgMicrosecondsPerInvocation="53" maxMicrosecondsPerInvocation="979" standardDeviationMicrosecondsPerInvocation="104"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="17" invocations="404" avgMicrosecondsPerInvocation="43" maxMicrosecondsPerInvocation="2408" standardDeviationMicrosecondsPerInvocation="125"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="14" invocations="29" avgMicrosecondsPerInvocation="502" maxMicrosecondsPerInvocation="6996" standardDeviationMicrosecondsPerInvocation="1302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="13" invocations="29" avgMicrosecondsPerInvocation="471" maxMicrosecondsPerInvocation="3531" standardDeviationMicrosecondsPerInvocation="908"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1602608258541" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1602608258543" release="" codeSize="123" numClasses="3"/>
+    <AppVersion sequence="2" timestamp="1602608274657" release="" codeSize="123" numClasses="3"/>
+    <AppVersion sequence="3" timestamp="1602608371390" release="" codeSize="123" numClasses="3"/>
+    <AppVersion sequence="4" timestamp="1602608779830" release="" codeSize="124" numClasses="3"/>
+    <AppVersion sequence="5" timestamp="1602609596584" release="" codeSize="120" numClasses="3"/>
+    <AppVersion sequence="6" timestamp="1602610210151" release="" codeSize="128" numClasses="3"/>
+    <AppVersion sequence="7" timestamp="1602610265134" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1602610312889" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1602610399007" release="" codeSize="128" numClasses="3"/>
+    <AppVersion sequence="10" timestamp="1602610471560" release="" codeSize="128" numClasses="3"/>
+  </History>
+</BugCollection>

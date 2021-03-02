@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.1.2" sequence="26" timestamp="1603992036835" analysisTimestamp="1603992036372" release="">
+  <Project projectName="Tokenizer">
+    <Jar>/Users/nathan/Desktop/CSE 2231/workspace/Tokenizer/bin/Tokenizer.class</Jar>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/workspace/Tokenizer/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/nathan/Desktop/CSE 2231/components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Applications/Eclipse.app/Contents/Eclipse/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib/jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/Tokenizer/src</SrcDir>
+    <SrcDir>/Users/nathan/Desktop/CSE 2231/workspace/Tokenizer/test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="2" last="2" removedByChange="true">
+    <Class classname="Tokenizer">
+      <SourceLine classname="Tokenizer" sourcefile="Tokenizer.java" sourcepath="Tokenizer.java"/>
+    </Class>
+    <Method classname="Tokenizer" name="tokens" signature="(Lcomponents/simplereader/SimpleReader;)Lcomponents/queue/Queue;" isStatic="true">
+      <SourceLine classname="Tokenizer" start="154" end="160" startBytecode="0" endBytecode="24" sourcefile="Tokenizer.java" sourcepath="Tokenizer.java"/>
+    </Method>
+    <LocalVariable name="tokens" register="1" pc="53" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="Tokenizer" start="158" end="158" startBytecode="52" endBytecode="52" sourcefile="Tokenizer.java" sourcepath="Tokenizer.java"/>
+    <SourceLine classname="Tokenizer" start="158" end="158" startBytecode="52" endBytecode="52" sourcefile="Tokenizer.java" sourcepath="Tokenizer.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="tokens"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="3" last="24" removedByChange="true">
+    <Class classname="Tokenizer">
+      <SourceLine classname="Tokenizer" sourcefile="Tokenizer.java" sourcepath="Tokenizer.java"/>
+    </Class>
+    <Method classname="Tokenizer" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Tokenizer" start="161" end="211" startBytecode="0" endBytecode="125" sourcefile="Tokenizer.java" sourcepath="Tokenizer.java"/>
+    </Method>
+    <LocalVariable name="q1" register="5" pc="48" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="Tokenizer" start="172" end="172" startBytecode="46" endBytecode="46" sourcefile="Tokenizer.java" sourcepath="Tokenizer.java"/>
+    <SourceLine classname="Tokenizer" start="172" end="172" startBytecode="46" endBytecode="46" sourcefile="Tokenizer.java" sourcepath="Tokenizer.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="q1"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 29 Oct 2020 13:20:36 -0400" total_classes="1" referenced_classes="23" total_bugs="0" total_size="74" num_packages="1" java_version="14.0.2" vm_version="14.0.2+12-46" cpu_seconds="1.07" clock_seconds="0.47" peak_mbytes="984.07" alloc_mbytes="2048.00" gc_seconds="0.00">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="74">
+      <ClassStats class="Tokenizer" sourceFile="Tokenizer.java" interface="false" size="74" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="124" invocations="371" avgMicrosecondsPerInvocation="336" maxMicrosecondsPerInvocation="12385" standardDeviationMicrosecondsPerInvocation="930"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="113" invocations="2" avgMicrosecondsPerInvocation="56968" maxMicrosecondsPerInvocation="95619" standardDeviationMicrosecondsPerInvocation="38651"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="19" invocations="372" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="1086" standardDeviationMicrosecondsPerInvocation="89"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="18" invocations="9" avgMicrosecondsPerInvocation="2000" maxMicrosecondsPerInvocation="11804" standardDeviationMicrosecondsPerInvocation="3573"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="16" invocations="23" avgMicrosecondsPerInvocation="724" maxMicrosecondsPerInvocation="3865" standardDeviationMicrosecondsPerInvocation="1059"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="12" invocations="6" avgMicrosecondsPerInvocation="2160" maxMicrosecondsPerInvocation="9654" standardDeviationMicrosecondsPerInvocation="3426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="12" invocations="23" avgMicrosecondsPerInvocation="537" maxMicrosecondsPerInvocation="5548" standardDeviationMicrosecondsPerInvocation="1118"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="12" invocations="336" avgMicrosecondsPerInvocation="36" maxMicrosecondsPerInvocation="955" standardDeviationMicrosecondsPerInvocation="95"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="12" invocations="23" avgMicrosecondsPerInvocation="522" maxMicrosecondsPerInvocation="9215" standardDeviationMicrosecondsPerInvocation="1867"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1603925822693" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1603925822695" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1603926228530" release="" codeSize="82" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1603926363554" release="" codeSize="79" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1603926370985" release="" codeSize="79" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1603926602055" release="" codeSize="96" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1603926798294" release="" codeSize="96" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1603926840743" release="" codeSize="96" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1603926869126" release="" codeSize="96" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1603926963135" release="" codeSize="96" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1603990199138" release="" codeSize="12" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1603990303918" release="" codeSize="98" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1603990802256" release="" codeSize="71" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1603990817420" release="" codeSize="71" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1603991051925" release="" codeSize="82" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1603991102219" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1603991195586" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1603991244041" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1603991274060" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1603991279667" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1603991345285" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1603991504801" release="" codeSize="79" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1603991585767" release="" codeSize="79" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1603991770272" release="" codeSize="79" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1603991899499" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1603991924136" release="" codeSize="79" numClasses="1"/>
+  </History>
+</BugCollection>
